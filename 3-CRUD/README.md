@@ -50,7 +50,7 @@ Chaques opérations correspond à une requête HTTP:
 - Tester les routes avec Postman
 
 ## Astuces
-Extension VSC pour Postman: [Postman.postman-for-vscode](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode)
+Extension VSC pour Postman: [Postman.postman-for-vscode](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode) <br/>
 Alternative a Postman: [Insomnia](https://insomnia.rest/download), [Bruno](https://usebruno.com/)
 
 ## Bon courage !
