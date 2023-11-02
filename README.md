@@ -32,4 +32,4 @@
 
 ## Exercices
 1. [Introduction](https://github.com/kbrdn1/fastify-api-exo/tree/main/1-Introduction)
-2. [BDD avec Docker](https://github.com/kbrdn1/fastify-api-exo/tree/main/1-Introduction)
+2. [BDD avec Docker](https://github.com/kbrdn1/fastify-api-exo/tree/main/2-BDD%20avec%20Docker)
