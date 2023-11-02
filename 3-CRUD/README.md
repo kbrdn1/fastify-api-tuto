@@ -37,7 +37,7 @@ Chaques opérations correspond à une requête HTTP:
     > 400 (Bad Request) si le titre ou le contenu est vide <br/>
     > 404 (Not Found) si l'article n'existe pas
     - DELETE `/articles/:id` qui supprime un article
-    > Status: 200 (OK) ✅ / 404 (Not Found) ❌ <br/>
+    > Status: 204 (No Content) ✅ / 404 (Not Found) ❌ <br/>
     > 404 (Not Found) si l'article n'existe pas
 
 > ### Astuces
@@ -47,6 +47,7 @@ Chaques opérations correspond à une requête HTTP:
 > 💡 Utiliser la methode `code` de Fastify pour retourner le bon status: [Status](https://fastify.dev/docs/latest/Reference/Reply/#codestatuscode)<br/>
 
 ![img1](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/3/crud-operations-in-sql.jpg)
+> Aide pour les requêtes SQL
 - Tester les routes avec Postman
 
 ## Astuces
