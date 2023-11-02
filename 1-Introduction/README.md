@@ -27,13 +27,13 @@
 - Créer une route GET `/home` qui renvoie `Hello Word`
 
 ## Tester mon API
-- Ouvrir Postman et créer un nouveau workspace, sélectionner `Blank Workspace`
+- Ouvrir Postman et créer un nouveau workspace, sélectionner `Blank Workspace` <br/>
     ![img1](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/1/test-my-API/postman-create-workspace.png)
     ![img2](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/1/test-my-API/postman-create-workspace-2.png)
 
-- Créer une nouvelle collection dans ce nouveau workspace <br>
+- Créer une nouvelle collection dans ce nouveau workspace <br/>
     ![img3](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/1/test-my-API/postman-create-collection.png)
-- Créer une nouvelle requête GET `/home` et l'envoyer
+- Créer une nouvelle requête GET `/home` et l'envoyer <br/>
     ![img4](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/1/test-my-API/postman-result.png)
 
 ## A toi de jouer !
