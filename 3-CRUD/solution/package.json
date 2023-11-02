@@ -2,8 +2,9 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "type":"module",
+  "type": "module",
   "dependencies": {
+    "@fastify/mysql": "^4.2.0",
     "fastify": "^4.24.3",
     "nodemon": "^3.0.1"
   }
