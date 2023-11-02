@@ -5,6 +5,9 @@ Un container est un environnement virtuel qui permet d'isoler une application et
 Docker permet de créer des containers à partir d'images.<br/>
 Une image est un modèle qui permet de créer des containers. Il existe des images pour tous les types d'applications. <br/>
 
+![img](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/2/VM-vs-Docker.png)
+> Schéma expliquant la différence entre une machine virtuelle et un container
+
 [Docker Hub](https://hub.docker.com/) est un site qui permet de stocker et de partager des images. <br/>
 
 Docker permet de créer des containers à partir de fichier `Dockerfile`. <br/>
@@ -82,6 +85,8 @@ Un docker-compose est un fichier qui contient les instructions pour créer plusi
 > les identifiants sont ceux du fichier `docker-compose.yml` <br/> user: `fastify`, password: `fastify`
 - Vérifier que la base de données `fastify` est bien créée
 
+![img7](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/2/docker-compose-schema.png)
+
 ## Créer une base de données
 - Créer un dossier `database` à la racine du projet
 - Créer un fichier `init.sql` dans le dossier `database`
@@ -97,7 +102,7 @@ Un docker-compose est un fichier qui contient les instructions pour créer plusi
 - Dans PhpMyAdmin, aller la base de données `fastify` puis dans l'onglet `Importer`
 - Sélectionner le fichier `init.sql` et cliquer sur le bouton `Importer`
 - Vérifier que la table `articles` a correctement été créée
-![img7](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/2/pma-container/pma-articles-table.png)
+![img8](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/2/pma-container/pma-articles-table.png)
 
 ## Astuces
 Extension VSC pour Docker: [ms-azuretools.vscode-docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) <br/>

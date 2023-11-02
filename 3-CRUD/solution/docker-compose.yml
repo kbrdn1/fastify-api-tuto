@@ -1,0 +1,30 @@
+# Conteneur MySQL et phpMyAdmin
+version: '3.8' # Version de docker-compose (https://docs.docker.com/compose/compose-file/compose-versioning/)
+
+services:
+    db: # Nom du container
+        image: mysql:8.0.25 # Version de l'image (https://hub.docker.com/_/mysql)
+        container_name: db # Nom du container
+        restart: always # Redémarrer le container si il s'arrête
+        environment: # Variables d'environnement
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: fastify
+            MYSQL_USER: fastify
+            MYSQL_PASSWORD: fastify
+        ports:
+            - 3306:3306 # Port du container:port de la machine
+        volumes: # Dossiers partagés permettant de persister les données en dehors du container
+            - ./docker/mysql:/var/lib/mysql # Dossier du container:Dossier de la machine
+
+    phpmyadmin:
+      image: phpmyadmin/phpmyadmin # Version de l'image (https://hub.docker.com/r/phpmyadmin/phpmyadmin)
+      container_name: phpmyadmin # Nom du container
+      restart: always # Redémarrer le container si il s'arrête
+      environment: # Variables d'environnement
+          PMA_HOST: db # Nom du container de la base de données
+          PMA_PORT: 3306 # Port du container de la base de données
+          MYSQL_ROOT_PASSWORD: root
+      ports:
+          - 8080:80 # Port du container:port de la machine
+      depends_on: # Dépendance du container, le container de la base de données doit être lancé avant
+          - db
