@@ -3,12 +3,15 @@
 ## Objectif
 - Créer un serveur Fastify
 - Tester mon API avec Postman
-- Créer un container Docker pour ma base de données
+- Créer un container Docker pour la base de données
 - Utiliser une base de données SQL avec Fastify
 - Créer un CRUD pour une ressource
 - Mettre en place une architecture MVC
+- Utiliser des variables d'environnement
+- Utiliser un ORM
 - Mettre en place une authentification avec JWT
 - Développer une API de blog en ligne
+- Conteneuriser mon API avec Docker
 
 ## Prérequis
 - Créer un compte [Postman](https://postman.com/downloads) (gratuit) et installer l'application
@@ -28,4 +31,5 @@
     - Développer dans le dossier `exercice`
 
 ## Exercices
-- [1 - Introduction](https://github.com/kbrdn1/fastify-api-exo/tree/main/1-Introduction)
+1. [Introduction](https://github.com/kbrdn1/fastify-api-exo/tree/main/1-Introduction)
+2. [BDD avec Docker](https://github.com/kbrdn1/fastify-api-exo/tree/main/1-Introduction)

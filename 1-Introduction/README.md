@@ -2,7 +2,7 @@
 
 ## Objectif
 - Créer un serveur Fastify
-- Créer une route GET `/home` qui renvoie `Hello Word`
+- Créer ma première route
 - Tester mon API avec Postman
 
 ## Prérequis
