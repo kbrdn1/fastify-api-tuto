@@ -41,7 +41,11 @@ Chaques opérations correspond à une requête HTTP:
     > 404 (Not Found) si l'article n'existe pas
 
 ![img1](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/3/crud-operations-in-sql.jpg)
-> 💡 Utiliser une requête préparée à l'aide de la methode `query` de la connexion à la base de données
+> 💡 Récupérer les données de la requête avec les methode `params` ou `query` et `body` de Fastify: [Request Doc](https://fastify.dev/docs/latest/Reference/Request/#request) <br/>
+> 💡 Utiliser une requête préparée à l'aide de la methode `query` de la connexion à la base de données: [FirstQuery](https://github.com/sidorares/node-mysql2#first-query) <br/>
+> 💡 Retourner les données au format JSON avec la methode `send` de Fastify: [Send](https://fastify.dev/docs/latest/Reference/Reply/#senddata) <br/>
+> 💡 Utiliser la methode `code` de Fastify pour retourner le bon status: [Status](https://fastify.dev/docs/latest/Reference/Reply/#codestatuscode)<br/>
+>
 - Tester les routes avec Postman
 
 ## Bon courage !
