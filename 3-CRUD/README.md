@@ -21,7 +21,8 @@ Chaques opérations correspond à une requête HTTP:
     ```bash
     npm i @fastify/mysql
     ```
-- A l'aide de la [documentation de Fastify](https://fastify.dev/docs/latest/Guides/Database/) et de la [documentation de MySQL](https://www.npmjs.com/package/mysql2#using-prepared-statements) écrire le code pour créer la connexion à la base de données dans `index.js`
+- A l'aide de la [documentation de Fastify](https://fastify.dev/docs/latest/Guides/Database/) et de la [documentation de MySQL](https://www.npmjs.com/package/mysql2#using-prepared-statements) écrire le code pour créer la connexion à la base de données dans `index.js`, tester la connexion avec `npm run start`
+> 💡 connectionString: `mysql://user:password@host:port/database`
 - Toujours dans `index.js`, en vous servant de la connexion a la base donnéeq, créer les routes suivantes:
     - GET `/articles` qui renvoie tous les articles 
     > Status: 200 (OK) ✅
@@ -48,7 +49,34 @@ Chaques opérations correspond à une requête HTTP:
 
 ![img1](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/3/crud-operations-in-sql.jpg)
 > Aide pour les requêtes SQL
-- Tester les routes avec Postman
+
+## Tester les routes
+- Lancer le serveur avec `npm run start`
+- Sur Postman, créer une nouvelle collection `Articles` et ajouter les routes suivantes:
+    - 🟢 GET `index` => `http://localhost:3000/articles`
+    - 🟢 GET `show` => `http://localhost:3000/articles/:id`
+    > Dans l'onglet params, ajouter une clé `id` avec une valeur `1` pour tester la route `show`
+    - 🟡 POST `store` => `http://localhost:3000/articles`
+    > Dans l'onglet body, sélectionner `raw` et `JSON` et ajouter les données suivantes:
+    > ```json
+    > {
+    >     "title": "Mon premier article",
+    >     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    > }
+    > ```
+    - 🔵 PUT `update` => `http://localhost:3000/articles/:id`
+    > Dans l'onglet params, ajouter une clé `id` avec une valeur `1` pour tester la route `update` <br/>
+    > Dans l'onglet body, sélectionner `raw` et `JSON` et ajouter les données suivantes:
+    > ```json
+    > {
+    >     "title": "Mon premier article modifié",
+    >     "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    > }
+    > ```
+    - 🔴 DELETE `destroy` => `http://localhost:3000/articles/:id`
+    > Dans l'onglet params, ajouter une clé `id` avec une valeur `1` pour tester la route `destroy`
+
+- Tester les routes avec Postman, vérifier que les données sont bien créées, modifiées et supprimées dans PhpMyAdmin [http://localhost:8080](http://localhost:8080)
 
 ## Astuces
 Extension VSC pour Postman: [Postman.postman-for-vscode](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode) <br/>
