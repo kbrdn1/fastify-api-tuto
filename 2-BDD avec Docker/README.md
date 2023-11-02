@@ -88,7 +88,7 @@ Un docker-compose est un fichier qui contient les instructions pour créer plusi
 - Dans ce fichier, ajouter le script SQL permettant de créer une table `articles` avec les champs suivants:
     | Nom | Type | Taille | Null | Default | Index |
     | --- | ---- | ------ | ---- | ------- | ----- |
-    | id | int | 11 | Non | Aucun | PRIMARY |
+    | id | int |  | Non | Aucun | PRIMARY |
     | title | varchar | 255 | Non | Aucun | Aucun |
     | banner | varchar | 255 | Non | Aucun | Aucun |
     | content | text |  | Non | Aucun | Aucun |
