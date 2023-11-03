@@ -1,4 +1,6 @@
-# Exercice 1 - Introduction
+# Exercice 1 - Découverte de Fastify
+Dans cet exercice, nous allons découvrir Fastify, un framework web pour Node.js. <br/>
+Nous allons créer un serveur et une route GET `/home` qui renvoie `Hello Word`. <br/>
 
 ## Objectif
 - Créer un serveur Fastify
