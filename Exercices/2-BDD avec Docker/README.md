@@ -82,7 +82,7 @@ Un docker-compose est un fichier qui contient les instructions pour créer plusi
 ![img6](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/2/mysql-container/docker-containers-tab.png)
 - Aller sur PhpMyAdmin depuis [Docker Desktop](https://www.docker.com/products/docker-desktop) ou sur [http://localhost:8080](http://localhost:8080)
 - Se connecter avec les identifiants de la base de données
-> les identifiants sont ceux du fichier `docker-compose.yml` <br/> user: `fastify`, password: `fastify`
+> les identifiants sont ceux du fichier `docker-compose.yml` <br/> user: `root`, password: `root`
 - Vérifier que la base de données `fastify` est bien créée
 
 ![img7](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/2/docker-compose-schema.png)

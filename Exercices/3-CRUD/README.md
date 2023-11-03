@@ -41,11 +41,16 @@ Chaques opérations correspond à une requête HTTP:
     > Status: 204 (No Content) ✅ / 404 (Not Found) ❌ <br/>
     > 404 (Not Found) si l'article n'existe pas
 
+> ### Attention
+> :warning: dans les routes `GET` et `DELETE`, il faut vérifier que l'article existe avant de le renvoyer ou de le supprimer <br/>
+> :warning: chaque fonction doivent être asynchrone [(async/await)](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/fonction_asynchrone) ou utiliser des [promises](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
 > ### Astuces
 > 💡 Récupérer les données de la requête avec les methode `params` ou `query` et `body` de Fastify: [Request Doc](https://fastify.dev/docs/latest/Reference/Request/#request) <br/>
 > 💡 Utiliser une requête préparée à l'aide de la methode `query` de la connexion à la base de données: [FirstQuery](https://github.com/sidorares/node-mysql2#first-query) <br/>
 > 💡 Retourner les données au format JSON avec la methode `send` de Fastify: [Send](https://fastify.dev/docs/latest/Reference/Reply/#senddata) <br/>
 > 💡 Utiliser la methode `code` de Fastify pour retourner le bon status: [Status](https://fastify.dev/docs/latest/Reference/Reply/#codestatuscode)<br/>
+> 💡 Utiliser les methodes `then` et `catch` pour gérer les erreurs: [Promise](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Promise) <br/>
 
 ![img1](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/3/crud-operations-in-sql.jpg)
 > Aide pour les requêtes SQL
@@ -77,6 +82,7 @@ Chaques opérations correspond à une requête HTTP:
     > Dans l'onglet params, ajouter une clé `id` avec une valeur `1` pour tester la route `destroy`
 
 - Tester les routes avec Postman, vérifier que les données sont bien créées, modifiées et supprimées dans PhpMyAdmin [http://localhost:8080](http://localhost:8080)
+![img2](https://raw.githubusercontent.com/kbrdn1/fastify-api-exo/main/assets/3/postman-routes-exemple.png)
 
 ## Astuces
 Extension VSC pour Postman: [Postman.postman-for-vscode](https://marketplace.visualstudio.com/items?itemName=Postman.postman-for-vscode) <br/>
