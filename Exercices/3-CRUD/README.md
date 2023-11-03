@@ -24,20 +24,20 @@ Chaques opérations correspond à une requête HTTP:
 - A l'aide de la [documentation de Fastify](https://fastify.dev/docs/latest/Guides/Database/) et de la [documentation de MySQL](https://www.npmjs.com/package/mysql2#using-prepared-statements) écrire le code pour créer la connexion à la base de données dans `index.js`, tester la connexion avec `npm run start`
 > 💡 connectionString: `mysql://user:password@host:port/database`
 - Toujours dans `index.js`, en vous servant de la connexion a la base donnéeq, créer les routes suivantes:
-    - GET `/articles` qui renvoie tous les articles 
+    - 🟢 GET `/articles` qui renvoie tous les articles 
     > Status: 200 (OK) ✅
-    - GET `/articles/:id` qui renvoie un article
+    - 🟢 GET `/articles/:id` qui renvoie un article
     > Status: 200 (OK) ✅ / 404 (Not Found) ❌ <br/>
     > 404 (Not Found) si l'article n'existe pas
-    - POST `/articles` qui crée un article
+    - 🟡 POST `/articles` qui crée un article
     > Status: 201 (Created) ✅ / 400 (Bad Request) ❌ / 409 (Conflict) ❌ <br/>
     > 400 (Bad Request) si le titre ou le contenu est vide <br/>
     > 409 (Conflict) si le titre existe déjà
-    - PUT `/articles/:id` qui modifie un article
+    - 🔵 PUT `/articles/:id` qui modifie un article
     > Status: 200 (OK) ✅ / 400 (Bad Request) ❌ / 404 (Not Found) ❌ <br/>
     > 400 (Bad Request) si le titre ou le contenu est vide <br/>
     > 404 (Not Found) si l'article n'existe pas
-    - DELETE `/articles/:id` qui supprime un article
+    - 🔴 DELETE `/articles/:id` qui supprime un article
     > Status: 204 (No Content) ✅ / 404 (Not Found) ❌ <br/>
     > 404 (Not Found) si l'article n'existe pas
 
