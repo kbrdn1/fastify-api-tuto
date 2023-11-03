@@ -5,14 +5,14 @@ Vous allez apprendre à créer un serveur, à utiliser une base de données, à 
 Tout au long de ce tutoriel, vous allez créer une API de blog en ligne.
 
 ## Table des matières
-1. [Objectif](#objectif)
+1. [Objectifs](#objectifs)
 2. [Technologies & Outils](#technologies--outils)
 2. [Prérequis](#prérequis)
 3. [Consignes](#consignes)
 4. [Conseils](#conseils)
 5. [Exercices](#exercices)
 
-## Objectif
+## Objectifs
 - Créer un serveur Fastify
 - Tester mon API avec Postman
 - Créer un container Docker pour la base de données
