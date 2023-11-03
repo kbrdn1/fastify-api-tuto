@@ -25,7 +25,7 @@ Un docker-compose est un fichier qui contient les instructions pour créer plusi
 ## Prérequis
 - Créer un compte [Docker Hub](https://hub.docker.com/) (gratuit) et installer l'application
 - Installer [Docker Desktop](https://www.docker.com/products/docker-desktop) (gratuit)
-> :warning: Sur Windows, il faut activer la virtualisation dans le BIOS ou utiliser WSL2 <br/>
+> :warning: Sur Windows, il faut activer la virtualisation dans le BIOS ou utiliser [WSL2](https://learn.microsoft.com/fr-fr/windows/wsl/install) et activer les  <br/>
 > Pour vérifier que Docker est bien installé, ouvrir le terminal et taper `docker -v` et `docker-compose -v`
 
 ## Créer un container Docker pour une base de données MySQL
